@@ -21,3 +21,6 @@ ex: encode_by_rbm(an_initialized_rbm, c(.19, .24, .37, .95, .25)) => c(.74, .44)
 Reconstructs a visible data vector from the given feature vector.
 
 ex: decode_by_rbm(an_initialized_rbm, c(.74, .44)) => c(.18, .22, .35, .95, .24)
+
+###dump_RBM_to_dir(rbm, path = getwd())
+Writes as tables the weight matrix and hidden & visible bias vectors to either the current working directory or a specified path.
